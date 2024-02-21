@@ -18,9 +18,12 @@ namespace _3_3
             }
         }
 
-        public int El(int number)
+        public int this[int index]
         {
-            return array[number];
+            get
+            {
+                return array[index];
+            }
         }
 
         public void SwitchEl(int number, int amount)
@@ -28,11 +31,10 @@ namespace _3_3
             array[number] = amount;
         }
 
-
         public OneDimension(int length, bool flag=false): base(flag)
         {
             array = new int[length];
-            base.TypeOfInizialization();
+            TypeOfInizialization();
         }
 
         protected override void UserFill()

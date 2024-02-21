@@ -4,13 +4,13 @@ using System.Text;
 
 namespace _3_3
 {
-    class StepDim:BaseClass, IStepDim
+    class StepDim : BaseClass, IStepDim
     {
         OneDimension[] array;
         public StepDim(int Length, bool Flag = false) : base(Flag)
         {
             array = new OneDimension[Length];
-            base.TypeOfInizialization();
+            TypeOfInizialization();
         }
 
 
@@ -68,7 +68,7 @@ namespace _3_3
             {
                 for (int j = 0; j < arraysw[i].Lengthl; j++)
                 {
-                    if (arraysw[i].El(j) % 2 == 0)
+                    if (arraysw[i][j] % 2 == 0)
                     {
                         arraysw[i].SwitchEl(j, i * j);
                     }
