@@ -12,7 +12,7 @@ namespace _3_3
         public TwoDim( int RowCount, int CountColumn, bool Flag=false) : base(Flag)
         {
             array = new int[RowCount, CountColumn];
-            base.TypeOfInizialization();
+            TypeOfInizialization();
 
         }
 
